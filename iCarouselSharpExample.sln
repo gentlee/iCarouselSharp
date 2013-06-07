@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iCarouselSharpExample", "iCarouselSharpExample\iCarouselSharpExample.csproj", "{D5268C57-4558-4C44-B0D3-4916A6755A40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iCarouselSharpBindingProject", "iCarouselSharp\iCarouselSharpBindingProject.csproj", "{1F408C0A-54EC-4F4F-949F-CA2ECC3B172F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+		Ad-Hoc|iPhone = Ad-Hoc|iPhone
+		AppStore|iPhone = AppStore|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1F408C0A-54EC-4F4F-949F-CA2ECC3B172F}.Ad-Hoc|iPhone.ActiveCfg = Release|Any CPU
+		{1F408C0A-54EC-4F4F-949F-CA2ECC3B172F}.Ad-Hoc|iPhone.Build.0 = Release|Any CPU
+		{1F408C0A-54EC-4F4F-949F-CA2ECC3B172F}.AppStore|iPhone.ActiveCfg = Release|Any CPU
+		{1F408C0A-54EC-4F4F-949F-CA2ECC3B172F}.AppStore|iPhone.Build.0 = Release|Any CPU
+		{1F408C0A-54EC-4F4F-949F-CA2ECC3B172F}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{1F408C0A-54EC-4F4F-949F-CA2ECC3B172F}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{1F408C0A-54EC-4F4F-949F-CA2ECC3B172F}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{1F408C0A-54EC-4F4F-949F-CA2ECC3B172F}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{1F408C0A-54EC-4F4F-949F-CA2ECC3B172F}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{1F408C0A-54EC-4F4F-949F-CA2ECC3B172F}.Release|iPhone.Build.0 = Release|Any CPU
+		{1F408C0A-54EC-4F4F-949F-CA2ECC3B172F}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{1F408C0A-54EC-4F4F-949F-CA2ECC3B172F}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{D5268C57-4558-4C44-B0D3-4916A6755A40}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{D5268C57-4558-4C44-B0D3-4916A6755A40}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{D5268C57-4558-4C44-B0D3-4916A6755A40}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{D5268C57-4558-4C44-B0D3-4916A6755A40}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{D5268C57-4558-4C44-B0D3-4916A6755A40}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{D5268C57-4558-4C44-B0D3-4916A6755A40}.Debug|iPhone.Build.0 = Debug|iPhone
+		{D5268C57-4558-4C44-B0D3-4916A6755A40}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{D5268C57-4558-4C44-B0D3-4916A6755A40}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{D5268C57-4558-4C44-B0D3-4916A6755A40}.Release|iPhone.ActiveCfg = Release|iPhone
+		{D5268C57-4558-4C44-B0D3-4916A6755A40}.Release|iPhone.Build.0 = Release|iPhone
+		{D5268C57-4558-4C44-B0D3-4916A6755A40}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{D5268C57-4558-4C44-B0D3-4916A6755A40}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = iCarouselSharpExample\iCarouselSharpExample.csproj
+	EndGlobalSection
+EndGlobal
