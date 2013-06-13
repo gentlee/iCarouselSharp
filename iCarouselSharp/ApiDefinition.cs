@@ -11,6 +11,7 @@ namespace iCarouselSharp
 	[BaseType (typeof (UIView))]
 	interface iCarousel {
 		#region Properties
+
 		//@property (nonatomic, weak_delegate) IBOutlet id<iCarouselDataSource> dataSource;
 		[Export ("dataSource")]
 		iCarouselDataSource DataSource { get; set; }
@@ -41,15 +42,15 @@ namespace iCarouselSharp
 		
 		//@property (nonatomic, assign, getter = isScrollEnabled) BOOL scrollEnabled;
 		[Export ("scrollEnabled", ArgumentSemantic.Assign)]
-		bool ScrollEnabled { [Export ("isScrollEnabled")] get; set; }
+		bool ScrollEnabled { [Bind ("isScrollEnabled")] get; set; }
 		
 		//@property (nonatomic, assign, getter = isVertical) BOOL vertical;
 		[Export ("vertical", ArgumentSemantic.Assign)]
-		bool Vertical { [Export ("isVertical")] get; set; }
+		bool Vertical { [Bind ("isVertical")] get; set; }
 		
 		//@property (nonatomic, readonly, getter = isWrapEnabled) BOOL wrapEnabled;
 		[Export ("wrapEnabled")]
-		bool WrapEnabled { [Export ("isWrapEnabled")] get; }
+		bool WrapEnabled { [Bind ("isWrapEnabled")] get; }
 		
 		//@property (nonatomic, assign) BOOL bounces;
 		[Export ("bounces", ArgumentSemantic.Assign)]
@@ -129,15 +130,16 @@ namespace iCarouselSharp
 		
 		//@property (nonatomic, readonly, getter = isDragging) BOOL dragging;
 		[Export ("dragging")]
-		bool Dragging { [Export ("isDragging")] get; }
+		bool Dragging { [Bind ("isDragging")] get; }
 		
 		//@property (nonatomic, readonly, getter = isDecelerating) BOOL decelerating;
 		[Export ("decelerating")]
-		bool Decelerating { [Export ("isDecelerating")] get; }
+		bool Decelerating { [Bind ("isDecelerating")] get; }
 		
 		//@property (nonatomic, readonly, getter = isScrolling) BOOL scrolling;
 		[Export ("scrolling")]
-		bool Scrolling { [Export ("isScrolling")] get; }
+		bool Scrolling { [Bind ("isScrolling")] get; }
+
 		#endregion
 
 
