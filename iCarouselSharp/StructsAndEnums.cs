@@ -1,9 +1,10 @@
 using System;
+using ObjCRuntime;
 
 namespace iCarouselSharp
 {
-	public enum iCarouselType
-	{
+	[Native]
+	public enum iCarouselType : long /* nint */ {
 		Linear = 0,
 		Rotary,
 		InvertedRotary,
@@ -17,9 +18,9 @@ namespace iCarouselSharp
 		InvertedTimeMachine,
 		Custom
 	}
-	
-	public enum iCarouselOption
-	{
+
+	[Native]
+	public enum iCarouselOption : long /* nint */ {
 		Wrap = 0,
 		ShowBackfaces,
 		OffsetMultiplier,
@@ -32,6 +33,7 @@ namespace iCarouselSharp
 		Spacing,
 		FadeMin,
 		FadeMax,
-		FadeRange
+		FadeRange,
+		FadeMinAlpha
 	}
 }
