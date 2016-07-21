@@ -1,19 +1,19 @@
 using System;
 using System.Collections.Generic;
-using System.Drawing;
-using MonoTouch.UIKit;
+using CoreGraphics;
+using UIKit;
 using iCarouselSharp;
 
 namespace iCarouselSharpExample
 {
 	public class CarouselDataSource : iCarouselDataSource
 	{
-		public override UIView PlaceholderViewAtIndex (iCarousel carousel, uint index, UIView view)
+		public override UIView PlaceholderViewAtIndex (iCarousel carousel, nint index, UIView view)
 		{
 			return null;
 		}
 		
-		public override uint NumberOfPlaceholdersInCarousel (iCarousel carousel)
+		public override nint NumberOfPlaceholdersInCarousel (iCarousel carousel)
 		{
 			return 0;
 		}
@@ -28,18 +28,18 @@ namespace iCarouselSharpExample
 				_items.Add(i);
 		}
 		
-		public override UIView ViewForItemAtIndex (iCarousel carousel, uint index, UIView reusingView)
+		public override UIView ViewForItemAtIndex (iCarousel carousel, nint index, UIView reusingView)
 		{
 			UILabel label = null;
 			
 			//create new view if no view is available for recycling
 			if (reusingView == null)
 			{
-				var imageView = new UIImageView(new RectangleF(0, 0, 200.0f, 200.0f));
+				var imageView = new UIImageView(new CGRect(0, 0, 200.0f, 200.0f));
 				imageView.Image = UIImage.FromFile("page.png");
 				imageView.ContentMode = UIViewContentMode.Center;
 				
-				var frame = new RectangleF(0, imageView.Frame.Bottom, imageView.Frame.Width, 75);
+				var frame = new CGRect(0, imageView.Frame.Bottom, imageView.Frame.Width, 75);
 				label = new UILabel(frame);
 				label.BackgroundColor = UIColor.Clear;
 				label.TextAlignment = UITextAlignment.Center;
@@ -66,9 +66,9 @@ namespace iCarouselSharpExample
 			return reusingView;
 		}
 		
-		public override uint NumberOfItemsInCarousel (iCarousel carousel)
+		public override nint NumberOfItemsInCarousel (iCarousel carousel)
 		{
-			return (uint) _items.Count;
+			return (nint) _items.Count;
 		}
 	}
 }

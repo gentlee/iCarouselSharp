@@ -19,7 +19,7 @@ namespace iCarouselSharpExample
 
 	public class CarouselDelegate : iCarouselDelegate
 	{
-		public override float ValueForOption(iCarousel carousel, iCarouselOption option, float defaultValue)
+		public override nfloat ValueForOption(iCarousel carousel, iCarouselOption option, nfloat defaultValue)
 		{
 			switch (option)
 			{
